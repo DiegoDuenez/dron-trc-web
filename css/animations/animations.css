@@ -1,0 +1,49 @@
+/*
+|  ----------------------------------------------------------------------------------
+|   @Animations (Animations)
+|  ----------------------------------------------------------------------------------
+|   
+|   In this file you create all animations that you will need in your project.
+|   Here is a little help.
+|
+*/
+
+.shadow-off:hover{
+    box-shadow: 0 0 40px -10px rgba(0 , 0 , 0 , 0) !important;
+}
+
+.shadow-on:hover{
+    box-shadow: 0 0 40px -10px rgba(0 , 0 , 0 , 0.25) !important;
+}
+
+.static:hover{
+    transform: none !important;
+}
+
+.contract:hover{
+    transform: scale(0.85) !important;
+}
+
+.impulse:hover{
+    transform: scale(1.05) !important;
+}
+
+.zoom:hover{
+    transform: scale(1.35) !important;
+}
+
+.up:hover{
+    transform: translateY(-20px) !important;
+}
+
+.down:hover{
+    transform: translateY(20px) !important;
+}
+
+.right:hover{
+    transform: translateX(20px) !important;
+}
+
+.left:hover{
+    transform: translateX(-20px) !important;
+}

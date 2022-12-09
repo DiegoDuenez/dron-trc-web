@@ -1,0 +1,19 @@
+/*
+|   ---------------------------------------------------------------------------------
+|   @Settings (Fonts)
+|   ---------------------------------------------------------------------------------
+|   
+|   Here you can put all your own font families using the @font-face rule.
+|
+*/
+
+
+@font-face {
+    font-family: 'BalooChettan2';
+    src: url('../../fonts/BalooChettan2-VariableFont_wght.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url('../../fonts/ethnocentric\ rg.otf') format('woff');
+}

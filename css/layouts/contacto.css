@@ -1,0 +1,131 @@
+/*
+|   ---------------------------------------------------------------------------------
+|   @Layouts (Contacto)
+|   ---------------------------------------------------------------------------------
+|
+*/
+
+.contacto{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 2rem;
+    gap: 5rem;
+    background-color: var(--negro);
+    position: relative;
+    justify-content: center;
+}
+
+.contacto__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    gap: 3rem;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.contacto__dron-container{
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    left: -25rem;
+}
+
+.contacto__dron-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.contacto__header{
+    display: flex;
+    min-width: 100%;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+}
+
+.contacto__title{
+    font-size: var(--fs-titulos);
+    font-family: var(--ff-titulos);
+    color: var(--blanco);
+}
+
+.contacto__title span{
+    font-size: var(--fs-titulos);
+    font-family: var(--ff-titulos);
+    color: var(--rojo);
+}
+
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    min-width: 100%;
+    gap: 2rem;
+}
+
+.contacto__form-row{
+    display: flex;
+    width: 100%;
+    gap: 5rem;
+}
+
+.contacto__input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contacto__form label{
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+
+
+.contacto__form input, textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(200, 199, 199);
+    font-size: 1.2rem;
+    color: var(--blanco);
+    resize: none;
+}
+
+.contacto__form input:focus, textarea:focus{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.contacto__button{
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.contacto__footer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: max-content;
+    min-width: 100%;
+}
+
+.contacto__footer a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: var(--fs-textos);
+}
+
