@@ -9,19 +9,16 @@ window.onscroll = function() {
 
 
         if (prevScrollpos > currentScrollPos) {
-            $('.navbar').css('top', '0').css('height', '4rem').css("padding", "0")
-            $('.navbar').css('background-color', 'var(--negro)')
+            $('.navbar').css('top', '0').css('height', '4rem').css("padding", "0").css('background-color', 'var(--negro)')
         } else {
-            $('.navbar').css('top', '-250px')
-            $('.navbar').css('background-color', 'var(--negro)')
+            $('.navbar').css('top', '-250px').css('background-color', 'var(--negro)')
 
         }
 
         prevScrollpos = currentScrollPos;
     }
     else{
-        $('.navbar').css('height', '12rem').css("padding", "1rem 5rem").css("padding-top", "3rem")
-        $('.navbar').css('background-color', 'transparent')
+        $('.navbar').css('height', '12rem').css("padding", "1rem 5rem").css("padding-top", "3rem").css('background-color', 'transparent')
 
     }
 
