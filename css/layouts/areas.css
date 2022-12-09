@@ -31,11 +31,13 @@
     flex-direction: column;
     position: relative;
     transition: 400ms;
+    overflow: hidden;
 }
 
-.areas__card img{
+.areas__card-img{
     width: 100%;
     height: 100%;
+    transition: 400ms;
     object-fit: cover;
 }
 
@@ -46,13 +48,18 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-}
-
-.areas__card-mask{
     color: var(--blanco);
     font-size: 2rem;
     font-weight: bold;
 }
+
+/* .areas__card-mask:hover + .areas__card-img{
+    transform: scale(1.5);z-index: -1;
+} */
+
+/* .areas__card img:hover {
+    transform: scale(1.5); 
+} */
 
 
 .areas__container{
