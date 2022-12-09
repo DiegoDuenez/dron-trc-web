@@ -129,3 +129,17 @@
     font-size: var(--fs-textos);
 }
 
+.contacto__boton-flotante{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+
+}
+
+.contacto__boton-flotante img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
