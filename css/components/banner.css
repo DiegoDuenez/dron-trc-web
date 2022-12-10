@@ -13,6 +13,7 @@
     background-image: url('../../resources/img/imagen-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: var(--negro); */
     justify-content: center;
     align-items: center;
 }
@@ -30,7 +31,14 @@
 .banner__video iframe, video{
     width: 100vw;
     height: 100vh;
+    object-fit: cover;
 }
+
+    @media screen and (min-width: 300px) and (max-width: 600px){
+        .banner__video{
+            display: none;
+        }
+    }
 
 .banner__button{
     display: flex;

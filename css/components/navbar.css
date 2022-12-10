@@ -17,6 +17,7 @@
     padding-top: 3rem;
     z-index: 9999;
     transition: 400ms;
+    background-color: var(--negro);
 }
     @media screen and (min-width: 300px) and (max-width: 600px){
 

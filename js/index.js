@@ -20,10 +20,10 @@ window.onscroll = function() {
     else{
 
         if(screen.width > 600){
-            $('.navbar').css('height', '12rem').css("padding", "1rem 5rem").css("padding-top", "3rem").css('background-color', 'transparent')
+            $('.navbar').css('height', '12rem').css("padding", "1rem 5rem").css("padding-top", "3rem").css('background-color', 'var(--negro)')
         }
         else{
-            $('.navbar').css('height', '12rem').css("padding", "1rem 1rem").css('background-color', 'transparent')
+            $('.navbar').css('height', '12rem').css("padding", "1rem 1rem").css('background-color', 'var(--negro)')
 
         }
 
