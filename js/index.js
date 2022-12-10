@@ -9,7 +9,12 @@ window.onscroll = function() {
 
 
         if (prevScrollpos > currentScrollPos) {
-            $('.navbar').css('top', '0').css('height', '4rem').css("padding", "0 1rem").css('background-color', 'var(--negro)')
+            if(screen.width > 600){
+                $('.navbar').css('top', '0').css('height', '4rem').css("padding", "0 1rem").css('background-color', 'var(--negro)')
+            }
+            else{
+                $('.navbar').css('top', '0').css('height', '6rem').css("padding", "1rem").css('background-color', 'var(--negro)')
+            }
         } else {
             $('.navbar').css('top', '-250px').css('background-color', 'var(--negro)')
 
@@ -20,10 +25,10 @@ window.onscroll = function() {
     else{
 
         if(screen.width > 600){
-            $('.navbar').css('height', '12rem').css("padding", "1rem 5rem").css("padding-top", "3rem").css('background-color', 'var(--negro)')
+            $('.navbar').css('height', '12rem').css("padding", "3rem 5rem").css('background-color', 'var(--negro)')
         }
         else{
-            $('.navbar').css('height', '12rem').css("padding", "1rem 1rem").css('background-color', 'var(--negro)')
+            $('.navbar').css('height', '6rem').css("padding", "1rem 1rem").css('background-color', 'var(--negro)')
 
         }
 
