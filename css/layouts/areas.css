@@ -22,6 +22,7 @@
     display: flex;
     width: 100%;
     height: max-content;
+    flex-wrap: wrap;
 }
 
 .areas__card{
@@ -33,6 +34,20 @@
     transition: 400ms;
     overflow: hidden;
 }
+
+    @media screen and (min-width: 501px) and (max-width: 900px){
+
+        .areas__card{
+            width: 50%;
+        }
+    }
+    @media screen and (min-width: 300px) and (max-width: 500px){
+
+        .areas__card{
+            width: 100%;
+        }
+    }
+
 
 .areas__card-img{
     width: 100%;
@@ -75,13 +90,15 @@
 
 .areas__container p{
     color: var(--blanco);
-    font-size: 2.5rem;
+    font-size: var(--fs-textos);
+    text-align: center;
 }
 
 .areas__title{
     font-size: var(--fs-titulos);
     font-family: var(--ff-titulos);
     color: var(--blanco);
+    text-align: center;
 }
 
 .areas__title span{

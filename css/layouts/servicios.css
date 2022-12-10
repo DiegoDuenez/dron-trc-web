@@ -30,6 +30,7 @@
     font-size: var(--fs-titulos);
     font-family: var(--ff-titulos);
     color: var(--rojo);
+    text-align: center;
 }
 
 .servicios__cards{
@@ -37,15 +38,36 @@
     width: 100%;
     height: max-content;
     gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+    @media screen and (min-width: 300px) and (max-width: 800px){
+
+        .servicios__cards{
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+
 
 .servicios__card{
     display: flex;
-    width: 33.3%;
-    height: 22rem;
+    width: 30%;
+    min-height: 22rem;
     flex-direction: column;
-    gap: 1rem;;
+    gap: 1rem;
+    height: max-content;
 }
+
+    @media screen and (min-width: 300px) and (max-width: 800px){
+
+        .servicios__card{
+            width: 100%;
+        }
+    }
+
+   
 
 .servicios__card-header{
     display: flex;
@@ -70,6 +92,7 @@
 .servicios__card-title{
     color: var(--negro);
     font-size: 2rem;
+    text-align: center;
 }
 
 .servicios__card-title span{
@@ -83,9 +106,9 @@
     font-size: var(--fs-textos);
     text-align: center;
     display: flex;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 
 .servicios__card-body p{
-    line-height: 2rem;
+    line-height: var(--lh-textos);
 }

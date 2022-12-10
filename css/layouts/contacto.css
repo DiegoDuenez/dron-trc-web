@@ -17,6 +17,12 @@
     position: relative;
     justify-content: center;
 }
+    @media screen and (min-width: 300px) and (max-width: 1200px){
+
+        .contacto{
+            padding: 4rem;
+        }
+    }
 
 .contacto__container{
     display: flex;
@@ -27,6 +33,13 @@
     align-items: center;
     margin-left: 30%;
 }
+    @media screen and (min-width: 300px) and (max-width: 1200px){
+
+        .contacto__container{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
 
 .contacto__dron-container{
     display: flex;
@@ -34,6 +47,19 @@
     top: 7rem;
     left: -25rem;
 }
+    @media screen and (min-width: 1201px) and (max-width: 1600px){
+
+        .contacto__dron-container{
+            left: -30rem;
+        }
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 1200px){
+
+        .contacto__dron-container{
+            display: none;
+        }
+    }
 
 .contacto__dron-container img{
     width: 100%;
@@ -43,9 +69,8 @@
 
 
 .contacto__header{
+    width: 100%;
     display: flex;
-    min-width: 100%;
-    width: max-content;
     height: max-content;
     justify-content: center;
 }
@@ -54,6 +79,7 @@
     font-size: var(--fs-titulos);
     font-family: var(--ff-titulos);
     color: var(--blanco);
+    text-align: center;
 }
 
 .contacto__title span{
@@ -76,6 +102,14 @@
     gap: 5rem;
 }
 
+    @media screen and (min-width: 300px) and (max-width: 600px){
+
+        .contacto__form-row{
+            gap: 2rem;
+            flex-direction: column;
+        }
+    }
+
 .contacto__input-group{
     display: flex;
     flex-direction: column;
@@ -85,7 +119,7 @@
 
 .contacto__form label{
     color: var(--blanco);
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
 }
 
 
@@ -95,7 +129,7 @@
     outline: none;
     padding: 10px 0;
     border-bottom: 1px solid rgb(200, 199, 199);
-    font-size: 1.2rem;
+    font-size: var(--fs-textos);
     color: var(--blanco);
     resize: none;
 }
@@ -109,7 +143,7 @@
     color: var(--blanco);
     border: none;
     outline: none;
-    font-size: 1.5rem;
+    font-size: var(--fs-textos);
     font-weight: bold;
     padding: 1rem;
     cursor: pointer;
@@ -122,6 +156,14 @@
     width: max-content;
     min-width: 100%;
 }
+
+    @media screen and (min-width: 300px) and (max-width: 800px){
+
+        .contacto__footer{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
 .contacto__footer a{
     color: var(--blanco);

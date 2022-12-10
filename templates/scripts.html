@@ -12,4 +12,22 @@
 
   AOS.init()
 
+  menu = new Menu({options: {element: '.menu', openWith: '.navbar__button', closeWith: '.menu__close', size:'lg', from: 'right',
+        callbackOnOpen: function(){
+            if($(window).width() <= 1220)
+            {
+                $('body').css('overflow', 'hidden')
+            }
+        },
+        callbackOnClose: function(){
+            if($(window).width() <= 1220)
+            {
+                $('body').css('overflow', 'auto')
+            }
+        } 
+    }})
+    menu.init();
+    menu.closeWith('.menu__link');
+
+
 </script>

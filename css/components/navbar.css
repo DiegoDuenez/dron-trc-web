@@ -8,7 +8,7 @@
 
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
@@ -18,14 +18,28 @@
     z-index: 9999;
     transition: 400ms;
 }
+    @media screen and (min-width: 300px) and (max-width: 600px){
+
+        .navbar{
+            padding: 1rem;
+        }
+        
+    }
 
 .navbar__logo{
     display: flex;
     justify-content: center;
-    width: max-content;
+    width: 100%;
     align-items: center;
     height: 100%;
 }
+    @media screen and (min-width: 300px) and (max-width: 600px){
+
+        .navbar__logo{
+            width: 70%;
+        }
+        
+    }
 
 .navbar__logo img{
     width: 80%;
@@ -33,6 +47,89 @@
     object-fit: contain;
 }
 
+
+.navbar__links{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content:space-between;
+}
+    @media screen and (min-width: 300px) and (max-width: 1220px){
+        
+        .navbar__links{
+            width: max-content;
+        }
+        
+    }
+
+.navbar__container{
+    display: flex;
+    width:max-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+    @media screen and (min-width: 300px) and (max-width: 1220px){
+
+        .navbar__container{
+            display: none;
+        }
+        
+    }
+
+
+.navbar__button-container {
+    width:max-content;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+    @media screen and (min-width: 300px) and (max-width: 1220px){
+
+        .navbar__button-container {
+            display: flex;
+        }
+        
+    }
+
+.navbar__button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.navbar__button i{
+    color: var(--blanco);
+}
+
+.navbar__link{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: var(--fs-textos);
+}
+
+.navbar__icon{
+    display: flex;
+    width: max-content;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__icon img{
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
+/*
 .navbar__links{
     display: flex;
     width: max-content;
@@ -45,7 +142,7 @@
 .navbar__link{
     color: var(--blanco);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: var(--fs-textos);
 }
 
 .navbar__phone{
@@ -69,4 +166,4 @@
     width: 2rem;
     height: 2rem;
     object-fit: contain;
-}
+}*/

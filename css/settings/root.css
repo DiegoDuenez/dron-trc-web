@@ -16,7 +16,17 @@
     --ff-textos: BalooChettan2;
     --fs-titulos: 4rem;
     --fs-textos: 1.5rem;
+    --lh-textos: 2rem;
 
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1600px){
+    :root{
+        --fs-titulos: 3rem;
+        --fs-textos: 1.2rem;
+        --lh-textos: 1.5rem;
+    }
 }
 
 
