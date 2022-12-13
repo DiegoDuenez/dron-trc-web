@@ -1,12 +1,12 @@
 <?php
 
 $nombre = test_input($_POST['nombre']);
-$proyecto= test_input($_POST['proyecto']);
+$email= test_input($_POST['email']);
 $telefono = test_input($_POST['telefono']);
 $mensaje = test_input($_POST['mensaje']);
 
 
-if (empty($nombre) ||  empty($proyecto)  || empty($mensaje) || empty($telefono)) {
+if (empty($nombre) ||  empty($email)  || empty($mensaje) || empty($telefono)) {
     echo json_encode('empty');
 } else {
     $para = "hola@drontrc.com";
@@ -20,8 +20,8 @@ if (empty($nombre) ||  empty($proyecto)  || empty($mensaje) || empty($telefono))
     <body>
         <h3>Nombre completo:</h3>
         <p>' . $nombre . '</p>
-        <h3>Proyecto:</h3>
-        <p> ' . $proyecto.'</p>
+        <h3>email:</h3>
+        <p> ' . $email.'</p>
         <h3>Teléfono:</h3>
         <p>' . $telefono . '</p>
         <h3>Mensaje:</h3>

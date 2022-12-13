@@ -12,8 +12,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 12rem;
-    padding: 3rem 5rem;
+    height: 8rem;
+    padding: 1rem 5rem;
     z-index: 9999;
     transition: 400ms;
     background-color: var(--negro);
@@ -82,7 +82,7 @@
     }
 
 .navbar__container--gap-1{
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 

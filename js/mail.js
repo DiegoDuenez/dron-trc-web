@@ -5,7 +5,7 @@ function enviar() {
 
         const nombre = $("#nombre").val()
         const telefono = $("#telefono").val()
-        const proyecto = $("#proyecto").val()
+        const proyecto = $("#email ").val()
         const mensaje = $("textarea#mensaje").val()
 
         if(nombre != "" && proyecto != "" && mensaje != "" && telefono != ""){
@@ -18,7 +18,7 @@ function enviar() {
                 success: function (response) {
                     $("#nombre").val('')
                     $("#telefono").val('')
-                    $("#proyecto").val('')
+                    $("#email ").val('')
                     $("textarea#mensaje").val('')
                     document.getElementById('status').innerHTML = "";
                     Swal.fire(
@@ -35,7 +35,7 @@ function enviar() {
                 },
                 error: function(xhr, status, error) {
                     $("#nombre").val('')
-                    $("#proyecto").val('')
+                    $("#email ").val('')
                     $("#telefono").val('')
                     $("textarea#mensaje").val('')
                     document.getElementById('status').innerHTML = "";
