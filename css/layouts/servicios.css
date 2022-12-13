@@ -37,7 +37,7 @@
     display: flex;
     width: 100%;
     height: max-content;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -54,15 +54,18 @@
 .servicios__card{
     display: flex;
     width: 30%;
-    min-height: 22rem;
+    min-height: 30rem;
     flex-direction: column;
     gap: 1rem;
     height: max-content;
+   /* border: 2px solid var(--rojo);
+    padding: 2rem;*/
 }
 
     @media screen and (min-width: 300px) and (max-width: 800px){
 
         .servicios__card{
+            min-height: max-content;
             width: 100%;
         }
     }
@@ -81,6 +84,8 @@
     display: flex;
     justify-content: center;
     width: max-content;
+    width: 10rem;
+    height: 10rem;
 }
 
 .servicios__card-img img{
