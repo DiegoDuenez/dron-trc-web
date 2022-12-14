@@ -13,9 +13,13 @@
     height: max-content;
     gap: 3rem;
     align-items: center;
-    background-color: var(--negro);
+    background-color: var(--blanco);
     position: relative;
     padding: 2rem 0;
+}
+
+.areas--negro{
+    background-color: var(--negro);
 }
 
 
