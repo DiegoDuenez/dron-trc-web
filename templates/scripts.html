@@ -25,12 +25,24 @@
 
     }
     });
-  
     glideMulti1.mount();
 
-  AOS.init()
 
-  menu = new Menu({options: {element: '.menu', openWith: '.navbar__button', closeWith: '.menu__close', size:'lg', from: 'right',
+    var glideBanner = new Glide('#banner__carousel', {
+    type: 'carousel',
+    autoplay: 3500,
+    perView: 1,
+    breakpoints: {
+		//   600: { perView: 1 },
+		//   900: { perView: 2 },
+
+    }
+    });
+    glideBanner.mount();
+
+    AOS.init()
+
+    menu = new Menu({options: {element: '.menu', openWith: '.navbar__button', closeWith: '.menu__close', size:'lg', from: 'right',
         callbackOnOpen: function(){
             if($(window).width() <= 1220)
             {
